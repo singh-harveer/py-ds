@@ -1,4 +1,6 @@
 from ds import graph, graph_questions
+from dp import dp_questions
+
 if __name__ =="__main__":
 
     g = {
@@ -76,19 +78,35 @@ if __name__ =="__main__":
     # result = graph_questions.shortestPath(edges, "w", "z")
     # print(result)
 
-    grid = [
-        ["W", "L", "W", "W", "W"],
-        ["W", "L", "W", "W", "W"],
-        ["W", "W", "W", "L", "W"],
-        ["W", "L", "L", "W", "W"],
-        ["L", "W", "W", "L", "L"],
-        ["L", "L", "W", "W", "W"],
-    ]
+    # grid = [
+    #     ["W", "L", "W", "W", "W"],
+    #     ["W", "L", "W", "W", "W"],
+    #     ["W", "W", "W", "L", "W"],
+    #     ["W", "L", "L", "W", "W"],
+    #     ["L", "W", "W", "L", "L"],
+    #     ["L", "L", "W", "W", "W"],
+    # ]
 
-    result = graph_questions.islandCount(grid)
-    print(result)
-    minSize = graph_questions.minIsLand(grid)
-    print(minSize)
+    # result = graph_questions.islandCount(grid)
+    # print(result)
+    # minSize = graph_questions.minIsLand(grid)
+    # print(minSize)
+
+    # print(dp_questions.fibMemoization(7))
+    # print(dp_questions.fibMemoization(50))
+
+    # print(dp_questions.fibUsingTabulation(7))
+    # print(dp_questions.fibUsingTabulation(50))
+
+    # print(dp_questions.knapsack([1, 6, 10, 16], [1, 2, 3, 5], 5))
+    # print(dp_questions.knapsack([1, 6, 10, 16], [1, 2, 3, 5], 6))
+    # print(dp_questions.knapsack([1, 6, 10, 16], [1, 2, 3, 5], 7))
+    # print(dp_questions.canSumMemoization(700, [2,3,5,8]))
+    # print(dp_questions.canSumMemoization(2, [6,3,4,8]))
+    # print(dp_questions.canSumTabulation(700, [2,3,5,8]))
+    # print(dp_questions.canSumTabulation(2, [6,3,4,8]))
+    print(dp_questions.howSumMemoization(5, [2,3,5,8]))
+    print(dp_questions.howSumMemoization(1111, [5,5,5,5]))
 
 
 
